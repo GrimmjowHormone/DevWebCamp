@@ -11,4 +11,10 @@
         font-weight: v.$delgada;
     }
 
+    &--centrar {
+        @extend .acciones;
+        text-align: center;
+        justify-content: center;
+    }
+
 }

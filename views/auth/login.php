@@ -3,9 +3,9 @@
         <?php echo $titulo ?>
     </h2>
 
-
+    <?php require_once __DIR__ . '/../templates/alertas.php' ?>
     <p class="auth__texto">Inicia sesión en DevWebCamp</p>
-    <form action="" class="formulario">
+    <form method="post" action="/login" class="formulario">
         <div class="formulario__campo">
             <label for="" class="formulario__label">Email</label>
             <input type="email"
