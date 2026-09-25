@@ -38,7 +38,7 @@ class AuthController
 
                         //redireciion
                         if ($usuario->admin) {
-                            header('Location: /admin-dashboard');
+                            header('Location: /admin/dashboard');
                         } else {
                             header('Location: /finalizar-registro');
                         }
