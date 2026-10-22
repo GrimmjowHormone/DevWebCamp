@@ -5,6 +5,11 @@
         const tagsDiv = document.querySelector('#tags')
         const tagsInputHidden = document.querySelector('[name=tags]')
         let tags = []
+        //recuperar el input oculto
+        if (tagsInputHidden.value !== '') {
+            tags = tagsInputHidden.value.split(',')
+            mostrarTags()
+        }
         //escuchar los cambios en el input
         tagsInput.addEventListener('keypress', guardarTag)
 
@@ -23,6 +28,7 @@
             }
         }
         function mostrarTags() {
+            console.log('Valor oculto:', tagsInputHidden.value)
             tagsDiv.textContent = ''
             tags.forEach(tag => {
                 const etiqueta = document.createElement('li')
