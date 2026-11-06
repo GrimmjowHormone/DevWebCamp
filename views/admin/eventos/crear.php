@@ -11,7 +11,7 @@
     <?php require_once __DIR__ . '/../../templates/alertas.php' ?>
 
 
-    <form action="/admin/ponentes/crear"  method="post" class="formulario">
+    <form action="/admin/eventos/crear" method="post" class="formulario">
         <?php include_once __DIR__ . '/../../admin/eventos/formulario.php' ?>
         <input type="submit" value="Registrar Evento" class="formulario__submit formulario__submit--registrar ">
     </form>
