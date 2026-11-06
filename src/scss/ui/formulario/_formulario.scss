@@ -70,6 +70,12 @@
 
     }
 
+    &__radio {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 1rem;
+    }
+
     &__texto {
         margin-top: 3rem;
     }
